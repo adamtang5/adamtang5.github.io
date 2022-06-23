@@ -11,11 +11,19 @@
 
 .tech-icon__wrap {
     width: 100%;
+    transform: scale(1, 1);
+    filter: grayscale(0.3);
+    transition-delay: .3s;
+    transition: transform 1s, filter 1s;
     padding: 20px;
 }
 
 .tech-icon__wrap:hover {
-    animation: wiggle .25s;
+    /* width: 100%; */
+    transform: scale(1.1, 1.1);
+    filter: grayscale(0);
+    /* animation: enlarge .5s; */
+    /* animation: wiggle .25s; */
     /* animation-iteration-count: infinite; */
 }
 
@@ -34,5 +42,15 @@
 
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes enlarge {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.1, 1.1);
     }
 }
