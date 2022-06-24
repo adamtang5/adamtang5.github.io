@@ -12,6 +12,27 @@
     border: none !important;
 }
 
+#header-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -11;
+    display: block;
+    background-image: url(../../images/glacier-national-park-2.jpg);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+#header-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
 article.flex-row {
     gap: 20px;
 }
@@ -38,6 +59,10 @@ article .details .external-links .flex-row {
 article .details .external-links .flex-row span {
     display: inline-block;
     margin-right: 2px;
+}
+
+#four .icons a {
+    color: var(--color-text-primary);
 }
 
 /* .external-links>a:after {
