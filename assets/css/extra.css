@@ -24,6 +24,15 @@ a.no-border>.flex-row:hover {
     color: var(--color-text-link-hover);
 }
 
+.footer-credit-link {
+    gap: 5px;
+}
+
+.footer-ext-link {
+    gap: 2px;
+    align-items: center;
+}
+
 #header-bg {
     position: fixed;
     top: 0;
@@ -138,4 +147,12 @@ article .details .external-links .flex-row span {
     to {
         transform: scale(1.1, 1.1);
     }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .footer-credit-link {
+        justify-content: flex-end;
+    }
+
 }
