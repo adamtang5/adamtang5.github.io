@@ -1,158 +1,158 @@
 .flex-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .no-border {
-    border: none !important;
+  border: none !important;
 }
 
 a.no-border>.flex-row {
-    transform: scale(1, 1);
-    color: var(--color-text-link);
-    transition-delay: .3s;
-    transition: transform 1s, color 1s;
+  transform: scale(1, 1);
+  color: var(--color-text-link);
+  transition-delay: .3s;
+  transition: transform 1s, color 1s;
 }
 
 a.no-border>.flex-row:hover {
-    transform: scale(1.05, 1.05);
-    color: var(--color-text-link-hover);
+  transform: scale(1.05, 1.05);
+  color: var(--color-text-link-hover);
 }
 
 .footer-credit-link {
-    gap: 5px;
+  gap: 5px;
 }
 
 .footer-ext-link {
-    gap: 2px;
-    align-items: center;
+  gap: 2px;
+  align-items: center;
 }
 
 #header-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -11;
-    display: block;
-    background-image: url(../../images/glacier-national-park-2.jpg);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -11;
+  display: block;
+  background-image: url(../../images/glacier-national-park-2.jpg);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 #header-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
 article.flex-row {
-    gap: 20px;
+  gap: 20px;
 }
 
 article.flex-row>.thumbnail {
-    width: 40%;
+  width: 40%;
 }
 
 article.flex-row>.details {
-    width: 55%;
-    margin: 0 0 2em 2em;
+  width: 55%;
+  margin: 0 0 2em 2em;
 }
 
 article .details p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 article .details .external-links .flex-row {
-    display: inline-block;
-    align-items: center;
-    margin: 0 5px;
+  display: inline-block;
+  align-items: center;
+  margin: 0 5px;
 }
 
 article .details .external-links .flex-row span {
-    display: inline-block;
-    margin-right: 2px;
+  display: inline-block;
+  margin-right: 2px;
 }
 
 #four .icons a {
-    color: var(--color-text-primary);
+  color: var(--color-text-primary);
 }
 
 /* .external-links>a:after {
-    content: url(images/exit.svg);
-    text-decoration: none;
-    max-width: 1em;
-    max-height: 1em;
+  content: url(images/exit.svg);
+  text-decoration: none;
+  max-width: 1em;
+  max-height: 1em;
 } */
 
 #larger-text {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .tech-icon__row {
-    display: flex;
+  display: flex;
 
-    width: 100%
+  width: 100%
 }
 
 .tech-icon__wrap {
-    width: 100%;
-    transform: scale(1, 1);
-    filter: grayscale(0.3);
-    transition-delay: .3s;
-    transition: transform 1s, filter 1s;
-    padding: 20px;
+  width: 100%;
+  transform: scale(1, 1);
+  filter: grayscale(0.3);
+  transition-delay: .3s;
+  transition: transform 1s, filter 1s;
+  padding: 20px;
 }
 
 .tech-icon__wrap:hover {
-    /* width: 100%; */
-    transform: scale(1.1, 1.1);
-    filter: grayscale(0);
-    /* animation: enlarge .5s; */
-    /* animation: wiggle .25s; */
-    /* animation-iteration-count: infinite; */
+  /* width: 100%; */
+  transform: scale(1.1, 1.1);
+  filter: grayscale(0);
+  /* animation: enlarge .5s; */
+  /* animation: wiggle .25s; */
+  /* animation-iteration-count: infinite; */
 }
 
 @keyframes wiggle {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
 
-    33% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
+  33% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
 
-    66% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
+  66% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
 
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 @keyframes enlarge {
-    from {
-        transform: scale(1, 1);
-    }
+  from {
+    transform: scale(1, 1);
+  }
 
-    to {
-        transform: scale(1.1, 1.1);
-    }
+  to {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 @media screen and (max-width: 1280px) {
 
-    .footer-credit-link {
-        justify-content: flex-end;
-    }
+  .footer-credit-link {
+    justify-content: flex-end;
+  }
 
 }
